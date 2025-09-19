@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  padding: 1.5rem;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Default tile size (for large screens, 3 per row) */
+app-metric-tile {
+  flex: 1 1 calc(33.333% - 1.5rem);
+  min-width: 300px;
+}
+
+/* Medium screens (2 per row) */
+@media (max-width: 1200px) {
+  app-metric-tile {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+}
+
+/* Small screens (1 per row) */
+@media (max-width: 768px) {
+  app-metric-tile {
+    flex: 1 1 100%;
+  }
+}

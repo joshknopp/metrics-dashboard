@@ -1,0 +1,44 @@
+:host {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 300px; /* Uniform height for all tiles */
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-tile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.metric-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.config-menu {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.visualization-area {
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 1rem;
+}
