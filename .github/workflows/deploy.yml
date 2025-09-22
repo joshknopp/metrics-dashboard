@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: ng build --base-href /metrics-dashboard/
+        run: npx ng build --base-href /metrics-dashboard/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
