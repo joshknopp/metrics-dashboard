@@ -14,7 +14,11 @@ import { ScatterChartComponent } from '../charts/scatter-chart/scatter-chart';
 export class MetricTileComponent {
   @Input() metric: any;
 
-  onTileClick(): void {
-    console.log(`Tile clicked: ${this.metric.name}`);
+  onTileClick($event: any): void {
+    console.log(`onTileClick: ${this.metric.name}`, $event);
+  }
+
+  onTileKeydownEnter($event: any): void {
+    console.log(`onTileKeydownEnter: ${this.metric.name}`, $event);
   }
 }

@@ -1,10 +1,10 @@
 <div class="metric-tile">
   <div class="tile-header">
     <h3 class="metric-name">{{ metric.name }}</h3>
-    <button class="config-menu">...</button>
+    <button class="config-menu">&#x22EE;</button>
   </div>
-  <div class="visualization-area" (click)="onTileClick()">
-    <div [ngSwitch]="metric.type" style="height: 100%;">
+  <div class="visualization-area" (click)="onTileClick($event)" (keydown.enter)="onTileKeydownEnter($event)" tabindex="0">
+    <div [ngSwitch]="metric.type" class="chart-container">
       <app-scorecard-chart *ngSwitchCase="'scorecard'" [data]="metric.data"></app-scorecard-chart>
       <app-donut-chart *ngSwitchCase="'donut'" [data]="metric.data"></app-donut-chart>
       <app-scatter-chart *ngSwitchCase="'scatter'" [data]="metric.data"></app-scatter-chart>

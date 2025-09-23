@@ -19,13 +19,13 @@ export class ScorecardChartComponent implements OnInit {
     this.chartOptions = {
       chart: {
         type: 'area',
-        height: '100px',
+        height: '200px',
         backgroundColor: 'transparent'
       },
       title: {
         text: this.data ? this.data.value.toLocaleString() : '',
         align: 'center',
-        verticalAlign: 'middle',
+        verticalAlign: 'bottom',
         style: {
           fontSize: '2rem',
           fontWeight: 'bold'
