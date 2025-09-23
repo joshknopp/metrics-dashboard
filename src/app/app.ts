@@ -13,6 +13,6 @@ import { FooterComponent } from './core/components/footer/footer';
 export class App {
   protected readonly title = signal('metrics-dashboard');
   constructor(){
-    console.log(`Powered by joshknopp.com; \u00A92025 Josh Knopp`);
+    console.info(`Powered by joshknopp.com; \u00A92025 Josh Knopp`);
   }
 }
